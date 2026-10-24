@@ -1,0 +1,31 @@
+/* Brochure / shade card download + lead form (ACP page only) */
+.btn-brochure{background:#fff;color:var(--navy);border:2px solid #fff}
+.btn-brochure:hover{background:#eaf6f7}
+.brochure-card{display:grid;grid-template-columns:minmax(0,260px) 1fr;gap:32px;align-items:center;background:#fff;border:1px solid #e4e9ef;border-radius:var(--r);padding:24px;box-shadow:0 1px 3px rgba(15,42,68,.08),0 6px 18px rgba(15,42,68,.07)}
+.brochure-thumb{position:relative;display:block;border:0;padding:0;background:none;cursor:pointer;border-radius:10px;overflow:hidden;box-shadow:0 8px 22px rgba(10,58,86,.25)}
+.brochure-thumb img{width:100%;height:auto;aspect-ratio:560/793;object-fit:cover}
+.brochure-thumb .tag{position:absolute;left:10px;top:10px;background:var(--amber);color:#1b1b1b;font-weight:700;font-size:.8rem;padding:4px 10px;border-radius:999px}
+.brochure-card h2{margin-bottom:6px}
+.brochure-card ul{margin:0 0 18px;padding-left:20px;color:var(--muted)}
+.btn-download{background:var(--navy);color:#fff}
+.btn-download:hover{background:var(--navy2)}
+.brochure-note{font-size:.9rem;color:var(--muted);margin:12px 0 0}
+.lead-dialog{border:0;border-radius:18px;padding:0;width:min(420px,calc(100vw - 28px));box-shadow:0 20px 60px rgba(0,0,0,.35);color:var(--ink)}
+.lead-dialog::backdrop{background:rgba(8,22,36,.6)}
+.lead-dialog form,.lead-dialog .done{padding:24px 22px 22px}
+.lead-dialog h3{margin:0 0 4px;color:var(--navy);font-size:1.3rem;padding-right:28px}
+.lead-dialog .sub2{margin:0 0 16px;color:var(--muted);font-size:.95rem}
+.lead-dialog label{display:block;font-weight:600;margin:12px 0 6px;font-size:.95rem}
+.lead-dialog input{width:100%;font:inherit;font-size:1.05rem;padding:12px 14px;border:1.5px solid #c9d3de;border-radius:10px;background:#fff;color:var(--ink)}
+.lead-dialog input:focus{border-color:#17a2a8;outline:none;box-shadow:0 0 0 3px rgba(23,162,168,.2)}
+.lead-dialog .mob{display:flex;align-items:stretch}
+.lead-dialog .mob span{display:flex;align-items:center;padding:0 12px;border:1.5px solid #c9d3de;border-right:0;border-radius:10px 0 0 10px;background:var(--alt);font-weight:600;color:var(--muted)}
+.lead-dialog .mob input{border-radius:0 10px 10px 0}
+.lead-dialog .err{color:#c0392b;font-size:.9rem;margin:6px 0 0;min-height:1.2em}
+.lead-dialog .btn{width:100%;margin-top:16px}
+.lead-dialog .x{position:absolute;right:10px;top:10px;width:40px;height:40px;border:0;background:none;font-size:1.6rem;line-height:1;color:var(--muted);cursor:pointer;border-radius:50%}
+.lead-dialog .x:hover{background:var(--alt)}
+.lead-dialog .privacy{font-size:.8rem;color:var(--muted);margin:10px 0 0;text-align:center}
+.lead-dialog .done{text-align:center}
+.lead-dialog .done .ok{font-size:2.4rem;margin:4px 0 6px}
+@media (max-width:720px){.brochure-card{grid-template-columns:1fr;gap:20px;padding:18px}.brochure-thumb{max-width:220px;margin:0 auto}}
