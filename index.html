@@ -18,6 +18,26 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"LocalBusiness","name":"MD Industries","telephone":"+91-9166782730","email":"imrankhn316@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Behind Hotel Rawat Regency, Bansur Road","addressLocality":"Kotputli","addressRegion":"Rajasthan","postalCode":"303108","addressCountry":"IN"}}
   </script>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YGDTH8GTG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1YGDTH8GTG');
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href]') : null;
+      if (!a) return;
+      var h = a.getAttribute('href') || '';
+      if (h.indexOf('tel:') === 0) gtag('event', 'phone_call_click', { link_url: h });
+      else if (/wa\.me|whatsapp\.com/i.test(h)) gtag('event', 'whatsapp_click', { link_url: h });
+    }, true);
+    document.addEventListener('submit', function (e) {
+      var f = e.target;
+      if (!f || f.id !== 'lead-form') return;
+      setTimeout(function () { if (f.hidden) gtag('event', 'generate_lead', { form_id: 'lead-form' }); }, 0);
+    }, true);
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
