@@ -49,8 +49,8 @@
     var name = nameEl.value.trim().replace(/\s+/g, ' ');
     var mobile = mobEl.value.replace(/\D/g, '');
     var ok = true;
-    if (name.length < 2) { nameErr.textContent = 'Apna naam likhein / Please enter your name'; ok = false; }
-    if (!/^[6-9]\d{9}$/.test(mobile)) { mobErr.textContent = 'Sahi 10 digit mobile number likhein (6, 7, 8 ya 9 se shuru)'; ok = false; }
+    if (name.length < 2) { nameErr.textContent = 'Please enter your name'; ok = false; }
+    if (!/^[6-9]\d{9}$/.test(mobile)) { mobErr.textContent = 'Please enter a valid 10-digit mobile number (starting with 6, 7, 8 or 9)'; ok = false; }
     if (!ok) { (name.length < 2 ? nameEl : mobEl).focus(); return; }
 
     var body = new URLSearchParams();
